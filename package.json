@@ -1,0 +1,31 @@
+{
+  "name": "learn-jest-js-unit-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Abdelrahman",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "babel-jest": "^30.0.5",
+    "@babel/preset-env": "^7.26.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "reports",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ]
+  }
+}
